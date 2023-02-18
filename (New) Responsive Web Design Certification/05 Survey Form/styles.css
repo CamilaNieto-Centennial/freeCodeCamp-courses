@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top left, rgba(18, 10, 6, 0.8), rgba(59, 41, 29, 0.7)),
+        url(https://i.postimg.cc/rspWXZww/mountains.jpg) center/cover no-repeat fixed;
+    /*background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;*/
+    width: 100%;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.main {
+    min-width: 350px;
+    width: 40%;
+    margin: 3rem auto 0 auto;
+    color: white;
+}
+
+#title,
+#description {
+    margin: 0.5rem auto;
+    text-align: center;
+}
+
+#title {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 0px #000000, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+#description {
+    font-style: italic;
+    font-weight: 200;
+}
+
+form {
+    background: #f1ece2db;
+    width: 60%;
+    min-width: 350px;
+    max-height: 80%;
+    margin: 2em auto;
+    padding: 2.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin: 0 auto 1.25rem auto;
+}
+
+label {
+    display: block;
+    font-size: 1.15rem;
+}
+
+input,
+select,
+textarea {
+    font-size: 1.15rem;
+    min-height: 2.2rem;
+    width: 100%;
+    color: #36241c;
+    margin: 0.2rem 0 0 0;
+    padding: 0.37rem 0.8rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    min-height: 1rem;
+    min-width: 1rem;
+}
+
+.sub-section {
+    font-size: 1.08rem;
+}
+
+input[type="submit"] {
+    display: block;
+    min-width: 200px;
+    width: 40%;
+    margin: 1em auto 0 auto;
+    text-align: center;
+    height: 2em;
+    font-size: 1.1rem;
+    background: #553922;
+    border-color: #36241c;
+    color: white;
+}

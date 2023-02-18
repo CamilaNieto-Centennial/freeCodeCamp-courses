@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+            Please fill out this form with the required information
+        </p>
+    </div>
+    <form action="" id="survey-form">
+        <div class="section">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" placeholder="Enter your name" id="name" required />
+        </div>
+
+        <div class="section">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" placeholder="Enter your email" id="email" required />
+        </div>
+
+        <div class="section">
+            <label for="number" id="number-label">Age</label>
+            <input type="number" placeholder="Age" id="number" min="18" max="120" />
+        </div>
+
+        <div class="section">
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select name="" id="dropdown">
+                <option value="">(Select an option)</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time Learner</option>
+                <option value="4">Prefer not to say</option>
+                <option value="5">Other</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <label for="">Would you recommend freeCodeCamp to a friend?</label>
+            <div class="sub-section">
+                <input type="radio" name="radioGroup" id="" value="definitely" />Definitely
+            </div>
+            <div class="sub-section">
+                <input type="radio" name="radioGroup" id="" value="maybe" />Maybe
+            </div>
+            <div class="sub-section">
+                <input type="radio" name="radioGroup" id="" value="not_sure" />Not sure
+            </div>
+        </div>
+
+        <div class="section">
+            <label for="">What would you like to see improved?</label>
+            <div class="sub-section">
+                <input type="checkbox" name="checkboxGroup" id="" value="projects" />Projects
+            </div>
+            <div class="sub-section">
+                <input type="checkbox" name="checkboxGroup" id="" value="data_visualization" />Data Visualization
+            </div>
+            <div class="sub-section">
+                <input type="checkbox" name="checkboxGroup" id="" value="challenges" />Challenges
+            </div>
+            <div class="sub-section">
+                <input type="checkbox" name="checkboxGroup" id="" value="videos" />Videos
+            </div>
+        </div>
+
+        <div class="section">
+            <label for="addComment">Any comments or suggestions?</label>
+            <textarea name="" id="addComment" cols="30" rows="7" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <input type="submit" id="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
