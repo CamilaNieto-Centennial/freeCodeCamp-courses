@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Sidebar Nav */
+nav {
+    background: #023e7d;
+    margin-right: 1em;
+    height: 100vh;
+    flex: 1 0 280px;
+    overflow-y: auto;
+}
+
+nav header {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5em;
+    background: #023e7d;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.8em 0.3em;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 1em;
+    color: #ffffff8e;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+    display: block;
+    padding: 1em;
+    border-left: 2px solid rgba(255, 255, 255, 0.79);
+    color: #fff;
+    background: #034b97;
+}
+
+/* Main Information */
+#main-doc {
+    margin: 1em;
+    overflow-y: auto;
+}
+
+.main-section {
+    margin: 1.8em 0;
+}
+
+.main-section header {
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+.main-section article {
+    margin: 1em;
+    line-height: 1.4em;
+    text-align: justify;
+    letter-spacing: 0.02em;
+}
+
+.main-section article p, .main-section article code, .main-section article li {
+    margin-bottom: 1.2em;
+}
+
+.main-section article ul {
+    margin-left: 2em;
+}
+
+.main-section article code {
+    width: 100%;
+    padding: 1em;
+    background: lightgray;
+    display: block;
+}
+
+/* Tablet Screen Size */
+@media (min-width: 769px) and (max-width: 992px){
+    /* Sidebar Nav */
+    nav {
+        font-size: .95em;
+        margin-right: .4em;
+        flex: 1 0 240px;
+    }
+    nav header {
+        font-size: 1.35em;
+        padding: 0.7em 0.25em;
+    }
+    nav a {
+        padding: .9em;
+    }
+    nav a:hover, nav a:active {
+        padding: .9em;
+        border-left: 1px solid rgba(255, 255, 255, 0.79);
+    }
+
+    /* Main Information */
+    .main-section {
+        margin: .8em 0;
+    }
+    .main-section article {
+        margin: .8em;
+        line-height: 1.3em;
+    }
+    .main-section article p, .main-section article code, .main-section article li {
+        margin-bottom: 1em;
+    }
+    .main-section article ul {
+        margin-left: 1.8em;
+    }
+    .main-section article code {
+        padding: .9em;
+    }
+}
+
+/* Phone Screen Size*/
+@media (max-width: 768px){
+    html, body {
+        max-width: 100%;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        overflow-y: scroll;
+        height: 100%;
+    }
+
+    /* Sidebar Nav */
+    nav {
+        margin-right: 0;
+        flex: 1 0 auto;
+        height: 100%;
+        overflow-y: hidden;
+    }
+    
+    /* Main Information */
+    #main-doc {
+        margin: 1.2em;
+        overflow-y:hidden;
+        overflow-x:hidden;
+    }
+    .main-section {
+        margin: 0 0 1.5em 0;
+    }
+    .main-section article {
+        margin: .8em;
+        line-height: 1.3em;
+        letter-spacing: 0;
+    }
+    .main-section article p, .main-section article code, .main-section article li {
+        margin-bottom: 1em;
+    }
+    .main-section article ul {
+        margin-left: 1.25em;
+    }
+    .main-section article code {
+        padding: 1em;
+    }
+}
